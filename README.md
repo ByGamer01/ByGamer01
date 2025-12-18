@@ -79,5 +79,3 @@
 ###
 
 <br clear="both">
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=ByGamer01&theme=nightowl)](https://git.io/streak-stats)
