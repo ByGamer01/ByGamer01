@@ -2,7 +2,7 @@
 
 **Flutter developer who ships mobile apps end to end: client, Firebase backend, monetization and store releases.**
 
-Mobile App Developer at **Grupo Barceló** · Multiplatform Application Development (DAM) student at CIDE · Spain
+Mobile App Developer at **Grupo Barceló** · Studying Multi-platform Applications Development (DAM) at CIDE · Spain
 
 Three apps live on the App Store under my own developer account, and FitVerso is also on Google Play.
 
@@ -30,8 +30,8 @@ Three apps live on the App Store under my own developer account, and FitVerso is
     <td valign="top">
       <b><a href="https://aistarapp.netlify.app">Star AI</a></b> &nbsp;<sub>Gamified multi-model AI chat · iOS</sub><br>
       Free AI chat with an energy economy instead of fixed hourly limits. Switch between Fast, Smart, Code and Vision modes, earn XP and complete daily missions.<br>
-      <sub>Flutter · Riverpod · GoRouter · Firebase · Cloud Functions (TypeScript) · AdMob rewarded ads</sub><br>
-      <a href="https://apps.apple.com/app/star-ai-ai-unlocked/id6774253609">App Store</a> · <a href="https://aistarapp.netlify.app">Website</a>
+      <sub>Flutter · Riverpod · GoRouter · Firebase · Cloud Functions (TypeScript) · AdMob rewarded ads</sub><br><br>
+      <a href="https://apps.apple.com/app/star-ai-ai-unlocked/id6774253609"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us" height="40" align="absmiddle" alt="Download Star AI on the App Store"></a>
     </td>
   </tr>
   <tr>
@@ -41,8 +41,8 @@ Three apps live on the App Store under my own developer account, and FitVerso is
     <td valign="top">
       <b><a href="https://sushiiapp.netlify.app">Sushii</a></b> &nbsp;<sub>Virtual-pet game · iOS</sub><br>
       Look after Nigi the nigiri, earn coins in a climbing minigame and keep a streak of real sushi dinners, solo or with a partner. No ads, no in-app purchases.<br>
-      <sub>Flutter · Firebase (Auth, Firestore, Storage) · Game Center · WidgetKit</sub><br>
-      <a href="https://apps.apple.com/app/sushii-your-cute-sushi-pet/id6807909139">App Store</a> · <a href="https://sushiiapp.netlify.app">Website</a>
+      <sub>Flutter · Firebase (Auth, Firestore, Storage) · Game Center · WidgetKit</sub><br><br>
+      <a href="https://apps.apple.com/app/sushii-your-cute-sushi-pet/id6807909139"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us" height="40" align="absmiddle" alt="Download Sushii on the App Store"></a>
     </td>
   </tr>
 </table>
@@ -63,7 +63,7 @@ Three apps live on the App Store under my own developer account, and FitVerso is
 ## Experience
 
 - **Mobile App Developer, Grupo Barceló** · Mar 2026 – present<br>Building mobile apps in a professional setting, contributing to product work, ongoing maintenance and development best practices.
-- **Multiplatform Application Development (DAM), CIDE** · Sep 2025 – present<br>Higher vocational degree (FP Superior), combined with my own projects.
+- **Higher Technician in Multi-platform Applications Development (DAM), CIDE** · Sep 2025 – present<br>Non-university higher education (EQF level 5, 120 ECTS, 2,000 hours), combined with my own projects.
 
 ## Stack
 
