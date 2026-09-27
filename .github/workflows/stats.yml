@@ -68,6 +68,9 @@ jobs:
             ${{ runner.temp }}/stats-out/snake-light.svg?color_snake=#1f2328&color_dots=#ebedf0,#d9c6fe,#b48af9,#8A3FFC,#5a22b8
             ${{ runner.temp }}/stats-out/snake-dark.svg?color_snake=#f0f6fc&color_dots=#151b23,#3b2366,#5d34a8,#A371F7,#d2b8ff
 
+      - name: Keep the grid (the snake roams without eating)
+        run: node .github/scripts/snake-keep-grid.mjs "$RUNNER_TEMP/stats-out/snake-light.svg" "$RUNNER_TEMP/stats-out/snake-dark.svg"
+
       - name: Publish to the orphan branch "stats"
         env:
           OUT_DIR: ${{ runner.temp }}/stats-out
