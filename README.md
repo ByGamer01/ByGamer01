@@ -75,6 +75,21 @@ Three apps live on the App Store under my own developer account, and FitVerso is
 
 **Also:** Riverpod, GoRouter, Swift (WidgetKit, Live Activities), Next.js, React, Tailwind CSS, Java, Python, SQL.
 
+## GitHub activity
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ByGamer01/ByGamer01/stats/activity-dark.svg">
+  <img src="https://raw.githubusercontent.com/ByGamer01/ByGamer01/stats/activity-light.svg" width="380" alt="Summary of my GitHub contributions: total since joining GitHub, current and longest streak, and active days in the last 365 days">
+</picture>&emsp;<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ByGamer01/ByGamer01/stats/monthly-dark.svg">
+  <img src="https://raw.githubusercontent.com/ByGamer01/ByGamer01/stats/monthly-light.svg" width="380" alt="Bar chart of my GitHub contributions per month over the last 12 months">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ByGamer01/ByGamer01/stats/snake-dark.svg">
+  <img src="https://raw.githubusercontent.com/ByGamer01/ByGamer01/stats/snake-light.svg" width="780" alt="Animated snake eating my GitHub contribution graph">
+</picture>
+
 <br>
 
 <sub>Apple, the Apple logo and App Store are trademarks of Apple Inc. Google Play and the Google Play logo are trademarks of Google LLC.</sub>
