@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="276" viewBox="0 0 380 276" role="img" aria-labelledby="mon-t mon-d">
+<title id="mon-t">Monthly GitHub contributions of ByGamer01</title>
+<desc id="mon-d">Contributions per calendar month, Nov 2025 to Oct 2026 (Oct 2026 month to date): Nov 16, Dec 10, Jan 132, Feb 477, Mar 71, Apr 444, May 904, Jun 1,148, Jul 1,031, Aug 1,253, Sep 638, Oct 0.</desc>
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif}
+.bg{fill:#0d1117;stroke:#3d444d;stroke-width:1}
+.h{font-size:14px;font-weight:600;fill:#f0f6fc}
+.meta,.foot,.tick,.end{font-size:13px;font-weight:400;fill:#9198a1}
+.peak{font-size:13px;font-weight:600;fill:#f0f6fc}
+.hero{font-size:40px;font-weight:600;fill:#f0f6fc}
+.cap,.lbl{font-size:14px;font-weight:400;fill:#9198a1}
+.val{font-size:14px;font-weight:600;fill:#f0f6fc}
+.det{font-weight:400;fill:#9198a1}
+.rule{stroke:#3d444d;stroke-width:1}
+.bar{fill:#A371F7}
+.bar-partial{fill:#0d1117;stroke:#A371F7;stroke-width:1.5}
+</style>
+<rect class="bg" x="0.5" y="0.5" width="379" height="263" rx="6"/>
+<text class="h" x="20" y="36">Monthly contributions</text>
+<text class="meta" x="360" y="36" text-anchor="end">Nov 2025 &#x2013; Oct 2026</text>
+<line class="rule" x1="20" y1="196.5" x2="360" y2="196.5"/>
+<path class="bar" d="M26.17 196V196A2 2 0 0 1 28.17 194H40.17A2 2 0 0 1 42.17 196V196Z"/>
+<path class="bar" d="M54.5 196V196A2 2 0 0 1 56.5 194H68.5A2 2 0 0 1 70.5 196V196Z"/>
+<path class="bar" d="M82.83 196V187A4 4 0 0 1 86.83 183H94.83A4 4 0 0 1 98.83 187V196Z"/>
+<path class="bar" d="M111.17 196V154A4 4 0 0 1 115.17 150H123.17A4 4 0 0 1 127.17 154V196Z"/>
+<path class="bar" d="M139.5 196V193A4 4 0 0 1 143.5 189H151.5A4 4 0 0 1 155.5 193V196Z"/>
+<path class="bar" d="M167.83 196V157A4 4 0 0 1 171.83 153H179.83A4 4 0 0 1 183.83 157V196Z"/>
+<path class="bar" d="M196.17 196V113A4 4 0 0 1 200.17 109H208.17A4 4 0 0 1 212.17 113V196Z"/>
+<path class="bar" d="M224.5 196V90A4 4 0 0 1 228.5 86H236.5A4 4 0 0 1 240.5 90V196Z"/>
+<path class="bar" d="M252.83 196V101A4 4 0 0 1 256.83 97H264.83A4 4 0 0 1 268.83 101V196Z"/>
+<path class="bar" d="M281.17 196V80A4 4 0 0 1 285.17 76H293.17A4 4 0 0 1 297.17 80V196Z"/>
+<path class="bar" d="M309.5 196V139A4 4 0 0 1 313.5 135H321.5A4 4 0 0 1 325.5 139V196Z"/>
+<text class="peak" x="289.17" y="70" text-anchor="middle">1,253</text>
+<text class="tick" x="34.17" y="216" text-anchor="middle">Nov</text>
+<text class="tick" x="62.5" y="216" text-anchor="middle">Dec</text>
+<text class="tick" x="90.83" y="216" text-anchor="middle">Jan</text>
+<text class="tick" x="119.17" y="216" text-anchor="middle">Feb</text>
+<text class="tick" x="147.5" y="216" text-anchor="middle">Mar</text>
+<text class="tick" x="175.83" y="216" text-anchor="middle">Apr</text>
+<text class="tick" x="204.17" y="216" text-anchor="middle">May</text>
+<text class="tick" x="232.5" y="216" text-anchor="middle">Jun</text>
+<text class="tick" x="260.83" y="216" text-anchor="middle">Jul</text>
+<text class="tick" x="289.17" y="216" text-anchor="middle">Aug</text>
+<text class="tick" x="317.5" y="216" text-anchor="middle">Sep</text>
+<text class="tick" x="345.83" y="216" text-anchor="middle">Oct</text>
+<text class="foot" x="20" y="244">Oct 2026: month to date</text>
+</svg>
