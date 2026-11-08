@@ -50,6 +50,9 @@ jobs:
             echo "No stats branch yet; first run."
           fi
 
+      - name: Test contribution city
+        run: node --test .github/scripts/contribution-city.test.mjs
+
       - name: Render SVGs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -76,7 +79,7 @@ jobs:
           OUT_DIR: ${{ runner.temp }}/stats-out
         run: |
           set -euo pipefail
-          files="activity-light.svg activity-dark.svg monthly-light.svg monthly-dark.svg snake-light.svg snake-dark.svg"
+          files="activity-light.svg activity-dark.svg monthly-light.svg monthly-dark.svg city-light.svg city-dark.svg snake-light.svg snake-dark.svg"
           for f in $files; do
             test -s "$OUT_DIR/$f" || { echo "::error::missing or empty $f"; exit 1; }
           done

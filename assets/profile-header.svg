@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="278" viewBox="0 0 780 278">
+  <defs>
+    <linearGradient id="back" x2="100%" y2="100%">
+      <stop stop-color="#09111e"/><stop offset="1" stop-color="#102b3a"/>
+    </linearGradient>
+    <linearGradient id="signal">
+      <stop stop-color="#5ae7ff"/><stop offset="1" stop-color="#6df7c2"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop stop-color="#3ee8cb" stop-opacity=".2"/><stop offset="1" stop-color="#3ee8cb" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#a3d9ee" opacity=".19"/>
+    </pattern>
+    <clipPath id="frame"><rect x="1" y="1" width="778" height="276" rx="20"/></clipPath>
+  </defs>
+  <style>
+    .signal { stroke-dasharray: 13 205; animation: trace 7s linear infinite; }
+    @keyframes trace { to { stroke-dashoffset: -218; } }
+    @media (prefers-reduced-motion: reduce) { .signal { animation: none; } }
+  </style>
+  <g clip-path="url(#frame)">
+    <rect width="780" height="278" fill="url(#back)"/>
+    <rect x="448" width="332" height="278" fill="url(#dots)"/>
+    <ellipse cx="620" cy="127" rx="167" ry="145" fill="url(#halo)"/>
+    <g fill="none">
+      <path d="M474 181h48l36-38h130l35-38h29M483 204h78l37-38h107l33-35" stroke="#1e5264"/>
+      <path class="signal" d="M474 181h48l36-38h130l35-38h29" stroke="url(#signal)" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="474" cy="181" r="3" fill="#61f2ca"/>
+      <circle cx="752" cy="105" r="3" fill="#61f2ca"/>
+    </g>
+    <g transform="translate(606 125) rotate(12)">
+      <rect x="-49" y="-87" width="100" height="176" rx="18" fill="#102839" stroke="#3c7582"/>
+      <rect x="-56" y="-87" width="100" height="176" rx="18" fill="#0b1727" stroke="url(#signal)" stroke-width="1.6"/>
+      <rect x="-49" y="-79" width="86" height="159" rx="12" fill="#112537" stroke="#264456"/>
+      <rect x="-22" y="-71" width="29" height="5" rx="2.5" fill="#5b8190"/>
+      <path d="M-37 31h62M-37 10h62M-37-11h62M-37-32h62" stroke="#254455" stroke-width="1"/>
+      <path d="M-35 29l13-17 10 8L2-5l8 8 15-23" fill="none" stroke="url(#signal)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="25" cy="-20" r="4" fill="#8df9d3"/>
+      <path d="M-19 68H7" stroke="#65929e" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <path d="M31 224.5h718" stroke="#294859"/>
+    <g font-family="ui-monospace, Consolas, monospace" font-size="13">
+      <text x="34" y="46" fill="#70f4cd" letter-spacing="1.6">@BYGAMER01</text>
+      <text x="34" y="251" fill="#bdd6e3">FLUTTER  /  FIREBASE  /  iOS + ANDROID</text>
+      <circle cx="681" cy="246" r="3" fill="#70f4cd"/>
+      <text x="746" y="251" fill="#a4c8d9" text-anchor="end">SHIPPED</text>
+    </g>
+    <text x="30" y="125" fill="#f0f9ff" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="66" font-weight="750" letter-spacing="-2">David Gil</text>
+    <text x="34" y="165" fill="#bed8e8" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="22">Mobile app developer</text>
+  </g>
+  <rect x=".5" y=".5" width="779" height="277" rx="20" fill="none" stroke="#2c5162"/>
+</svg>

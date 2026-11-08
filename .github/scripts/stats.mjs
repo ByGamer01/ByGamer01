@@ -15,13 +15,14 @@
 // uses for this token (the owner's zone for a personal token, most likely UTC for the Actions
 // token). The day boundaries of the data follow that same zone, so the two always agree.
 //
-// Output: activity-{light,dark}.svg and monthly-{light,dark}.svg.
+// Output: activity-{light,dark}.svg, monthly-{light,dark}.svg and city-{light,dark}.svg.
 // Same data and same "today" always produce byte-identical files.
 // On an API failure or implausible data it exits non-zero BEFORE writing anything,
 // so the cards published by the previous run stay live.
 
 import { mkdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join, resolve } from "node:path";
+import { renderContributionCity } from "./contribution-city.mjs";
 
 const LOGIN = process.env.STATS_USER || "ByGamer01";
 const OUT_DIR = resolve(process.env.OUT_DIR || "stats-out");
@@ -225,6 +226,7 @@ function computeStats({ createdAt, days, restrictedByYear }, today) {
     includesPrivate: Object.values(restrictedByYear).some((n) => n > 0),
     restrictedByYear,
     last365: { from: windowStart, to: today, total: sum(window), activeDays: active(window), days: window.length },
+    cityDays: window,
     allTime: { total: sum(series), activeDays: active(series), days: series.length },
     current: { ...current, lastActive },
     longest,
@@ -513,11 +515,12 @@ async function main() {
   const stats = computeStats(raw, today);
   validate(stats, readPrevious(process.env.PREV_SVG, allowDrop), allowDrop);
 
-  // Render everything first, write only when all four files exist in memory.
+  // Render everything first, write only when all six files exist in memory.
   const files = {};
   for (const theme of Object.keys(THEMES)) {
     files[`activity-${theme}.svg`] = renderActivity(stats, theme);
     files[`monthly-${theme}.svg`] = renderMonthly(stats, theme);
+    files[`city-${theme}.svg`] = renderContributionCity(stats.cityDays, theme);
   }
   mkdirSync(OUT_DIR, { recursive: true });
   for (const [name, svg] of Object.entries(files)) writeFileSync(join(OUT_DIR, name), svg);
