@@ -1,7 +1,5 @@
 # <img src="assets/profile-header.svg" width="780" alt="David Gil — Mobile app developer">
 
-[Portfolio](https://davidgil.netlify.app)
-
 ## GitHub activity
 
 <picture>
