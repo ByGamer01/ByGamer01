@@ -1,53 +1,97 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="780" height="278" viewBox="0 0 780 278">
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="280" viewBox="0 0 780 280" role="img" aria-labelledby="title desc">
+  <title id="title">David Gil — Mobile app developer</title>
+  <desc id="desc">An illustrated mobile device on a violet technical grid, with mint and violet orbital lines.</desc>
   <defs>
-    <linearGradient id="back" x2="100%" y2="100%">
-      <stop stop-color="#09111e"/><stop offset="1" stop-color="#102b3a"/>
+    <clipPath id="frame"><rect x=".5" y=".5" width="779" height="279" rx="19"/></clipPath>
+    <linearGradient id="background" x1="0" y1="0" x2="780" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0e1120"/><stop offset=".52" stop-color="#111425"/><stop offset="1" stop-color="#17152c"/>
     </linearGradient>
-    <linearGradient id="signal">
-      <stop stop-color="#5ae7ff"/><stop offset="1" stop-color="#6df7c2"/>
-    </linearGradient>
-    <radialGradient id="halo">
-      <stop stop-color="#3ee8cb" stop-opacity=".2"/><stop offset="1" stop-color="#3ee8cb" stop-opacity="0"/>
+    <radialGradient id="aurora">
+      <stop stop-color="#804dd4" stop-opacity=".35"/><stop offset="1" stop-color="#804dd4" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="1" cy="1" r="1" fill="#a3d9ee" opacity=".19"/>
+    <linearGradient id="grid-fade">
+      <stop stop-color="white" stop-opacity="0"/><stop offset=".38" stop-color="white"/><stop offset="1" stop-color="white" stop-opacity=".3"/>
+    </linearGradient>
+    <mask id="grid-mask"><rect x="393" y="0" width="387" height="280" fill="url(#grid-fade)"/></mask>
+    <pattern id="grid" width="19" height="19" patternUnits="userSpaceOnUse">
+      <path d="M19 0H0V19" fill="none" stroke="#ab9be3" stroke-opacity=".17"/>
     </pattern>
-    <clipPath id="frame"><rect x="1" y="1" width="778" height="276" rx="20"/></clipPath>
+    <linearGradient id="edge" x1="0" y1="0" x2="780" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4c426a"/><stop offset=".5" stop-color="#2e2b48"/><stop offset="1" stop-color="#54417b"/>
+    </linearGradient>
+    <linearGradient id="orbit" x1="442" y1="0" x2="744" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5cf0cd" stop-opacity=".05"/><stop offset=".4" stop-color="#5cf0cd"/><stop offset="1" stop-color="#b991ff" stop-opacity=".5"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="118" y2="197" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e0d4ff"/><stop offset=".34" stop-color="#9879df"/><stop offset=".66" stop-color="#453465"/><stop offset="1" stop-color="#9c78ec"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="6" y1="6" x2="112" y2="190" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#282143"/><stop offset="1" stop-color="#11192b"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="22" y1="64" x2="96" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f6f0ff"/><stop offset="1" stop-color="#a8f9e0"/>
+    </linearGradient>
+    <radialGradient id="shadow"><stop stop-color="#080814" stop-opacity=".9"/><stop offset="1" stop-color="#080814" stop-opacity="0"/></radialGradient>
   </defs>
   <style>
-    .signal { stroke-dasharray: 13 205; animation: trace 7s linear infinite; }
-    @keyframes trace { to { stroke-dashoffset: -218; } }
-    @media (prefers-reduced-motion: reduce) { .signal { animation: none; } }
+    @media (prefers-reduced-motion: no-preference) {
+      .device { animation: settle 4.4s cubic-bezier(.4,0,.2,1) both; }
+      .tracer { animation: trace 3.9s .25s cubic-bezier(.4,0,.2,1) both; }
+      .beacon { animation: pulse 1.4s 1.8s ease-out both; }
+    }
+    @keyframes settle { 0%, 100% { transform: translateY(0); } 48% { transform: translateY(-5px); } }
+    @keyframes trace { from { stroke-dashoffset: 100; } to { stroke-dashoffset: 0; } }
+    @keyframes pulse { 0% { opacity: 0; r: 4px; } 35% { opacity: .65; } 100% { opacity: 0; r: 13px; } }
   </style>
+
   <g clip-path="url(#frame)">
-    <rect width="780" height="278" fill="url(#back)"/>
-    <rect x="448" width="332" height="278" fill="url(#dots)"/>
-    <ellipse cx="620" cy="127" rx="167" ry="145" fill="url(#halo)"/>
-    <g fill="none">
-      <path d="M474 181h48l36-38h130l35-38h29M483 204h78l37-38h107l33-35" stroke="#1e5264"/>
-      <path class="signal" d="M474 181h48l36-38h130l35-38h29" stroke="url(#signal)" stroke-width="2" stroke-linecap="round"/>
-      <circle cx="474" cy="181" r="3" fill="#61f2ca"/>
-      <circle cx="752" cy="105" r="3" fill="#61f2ca"/>
+    <rect width="780" height="280" fill="url(#background)"/>
+    <ellipse cx="611" cy="138" rx="216" ry="183" fill="url(#aurora)"/>
+    <rect x="393" width="387" height="280" fill="url(#grid)" mask="url(#grid-mask)"/>
+    <path d="M403 0v280M419 140h337" fill="none" stroke="#8d7fba" stroke-opacity=".21" stroke-dasharray="2 6"/>
+    <g fill="none" stroke="#b7a1ed" stroke-opacity=".65">
+      <path d="M442 59h14m-7-7v14M716 50h14m-7-7v14M719 218h14m-7-7v14M457 210h14m-7-7v14"/>
+      <ellipse cx="595" cy="138" rx="124" ry="95" stroke-opacity=".21" stroke-dasharray="3 6"/>
     </g>
-    <g transform="translate(606 125) rotate(12)">
-      <rect x="-49" y="-87" width="100" height="176" rx="18" fill="#102839" stroke="#3c7582"/>
-      <rect x="-56" y="-87" width="100" height="176" rx="18" fill="#0b1727" stroke="url(#signal)" stroke-width="1.6"/>
-      <rect x="-49" y="-79" width="86" height="159" rx="12" fill="#112537" stroke="#264456"/>
-      <rect x="-22" y="-71" width="29" height="5" rx="2.5" fill="#5b8190"/>
-      <path d="M-37 31h62M-37 10h62M-37-11h62M-37-32h62" stroke="#254455" stroke-width="1"/>
-      <path d="M-35 29l13-17 10 8L2-5l8 8 15-23" fill="none" stroke="url(#signal)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-      <circle cx="25" cy="-20" r="4" fill="#8df9d3"/>
-      <path d="M-19 68H7" stroke="#65929e" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="607" cy="224" rx="104" ry="26" fill="url(#shadow)"/>
+    <ellipse cx="596" cy="139" rx="149" ry="44" transform="rotate(-24 596 139)" fill="none" stroke="url(#orbit)" stroke-opacity=".52"/>
+    <g transform="translate(550 47) rotate(-13 59 98)">
+      <rect x="-5" y="0" width="110" height="187" rx="21" fill="#1a1731" fill-opacity=".55" stroke="#9a83d8" stroke-opacity=".62"/>
+      <rect x="1" y="6" width="98" height="175" rx="15" fill="none" stroke="#736197" stroke-dasharray="2 4"/>
+      <path d="M9 45h79M9 57h43M9 69h54" fill="none" stroke="#7c6aa7" stroke-opacity=".55"/>
     </g>
-    <path d="M31 224.5h718" stroke="#294859"/>
-    <g font-family="ui-monospace, Consolas, monospace" font-size="13">
-      <text x="34" y="46" fill="#70f4cd" letter-spacing="1.6">@BYGAMER01</text>
-      <text x="34" y="251" fill="#bdd6e3">FLUTTER  /  FIREBASE  /  iOS + ANDROID</text>
-      <circle cx="681" cy="246" r="3" fill="#70f4cd"/>
-      <text x="746" y="251" fill="#a4c8d9" text-anchor="end">SHIPPED</text>
+    <g class="device">
+      <g transform="translate(556 38) rotate(13 59 98)">
+        <rect x="6" y="3" width="118" height="197" rx="23" fill="#30234d" stroke="#69568f"/>
+        <rect x="0" y="0" width="118" height="197" rx="23" fill="#151227" stroke="url(#metal)" stroke-width="2"/>
+        <rect x="6" y="6" width="106" height="185" rx="18" fill="url(#screen)" stroke="#635080"/>
+        <rect x="43" y="14" width="32" height="6" rx="3" fill="#0e0d1e"/>
+        <circle cx="69" cy="17" r="1.1" fill="#8974bc"/>
+        <path d="M-1 43v22m0 6v16m120-29v29" fill="none" stroke="#beabf0" stroke-width="2" stroke-linecap="round"/>
+        <g fill="none" stroke="#a992d9" stroke-opacity=".32">
+          <rect x="19" y="50" width="80" height="83" rx="12"/>
+          <path d="M19 92h80M59 50v83"/>
+        </g>
+        <path d="M29 111V70h10a20.5 20.5 0 0 1 0 41H29m61-36a20 20 0 1 0 0 31V92H78" fill="none" stroke="url(#mark)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="90" cy="106" r="2.7" fill="#83f8d8"/>
+        <path d="M23 148h19m5 0h19m5 0h19" fill="none" stroke="#a68edb" stroke-opacity=".5" stroke-width="3" stroke-linecap="round"/>
+        <path d="M40 179h38" fill="none" stroke="#9986bb" stroke-width="2" stroke-linecap="round"/>
+      </g>
     </g>
-    <text x="30" y="125" fill="#f0f9ff" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="66" font-weight="750" letter-spacing="-2">David Gil</text>
-    <text x="34" y="165" fill="#bed8e8" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="22">Mobile app developer</text>
+    <path class="tracer" pathLength="100" d="M447 190C465 216 554 200 626 166S748 91 732 74" fill="none" stroke="url(#orbit)" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="100"/>
+    <circle cx="712" cy="111" r="3.7" fill="#a5ffe5"/>
+    <circle class="beacon" cx="712" cy="111" r="4" fill="none" stroke="#a5ffe5" opacity="0"/>
+    <circle cx="495" cy="201" r="2.8" fill="#b996ff"/>
+
+    <path d="M34 224.5H377" stroke="#443a60"/>
+    <g font-family="Cascadia Mono, Consolas, DejaVu Sans Mono, monospace" font-size="12" letter-spacing="1.6">
+      <text x="35" y="52" fill="#b8a4e7">@BYGAMER01</text>
+      <circle cx="39" cy="250" r="3" fill="#74eac8"/>
+      <text x="52" y="254" fill="#c9bce6">iOS &amp; ANDROID</text>
+      <text x="746" y="254" fill="#ad9ec9" text-anchor="end">01 / MOBILE</text>
+    </g>
+    <text x="31" y="144" fill="#faf7ff" font-family="Bahnschrift, Avenir Next, DejaVu Sans, sans-serif" font-size="76" font-weight="700" letter-spacing="-3.8">David Gil</text>
+    <text x="35" y="185" fill="#d3c8ed" font-family="Bahnschrift, Avenir Next, DejaVu Sans, sans-serif" font-size="25">Mobile app developer</text>
   </g>
-  <rect x=".5" y=".5" width="779" height="277" rx="20" fill="none" stroke="#2c5162"/>
+  <rect x=".5" y=".5" width="779" height="279" rx="19" fill="none" stroke="url(#edge)"/>
 </svg>
