@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="780" height="280" viewBox="0 0 780 280" role="img" aria-labelledby="title desc">
   <title id="title">David Gil — Mobile app developer</title>
-  <desc id="desc">An illustrated mobile device on a violet technical grid, with mint and violet orbital lines.</desc>
+  <desc id="desc">An illustrated mobile app dashboard on a violet technical grid, with mint and violet orbital lines.</desc>
   <defs>
     <clipPath id="frame"><rect x=".5" y=".5" width="779" height="279" rx="19"/></clipPath>
     <linearGradient id="background" x1="0" y1="0" x2="780" y2="280" gradientUnits="userSpaceOnUse">
@@ -27,9 +27,6 @@
     </linearGradient>
     <linearGradient id="screen" x1="6" y1="6" x2="112" y2="190" gradientUnits="userSpaceOnUse">
       <stop stop-color="#282143"/><stop offset="1" stop-color="#11192b"/>
-    </linearGradient>
-    <linearGradient id="mark" x1="22" y1="64" x2="96" y2="112" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#f6f0ff"/><stop offset="1" stop-color="#a8f9e0"/>
     </linearGradient>
     <radialGradient id="shadow"><stop stop-color="#080814" stop-opacity=".9"/><stop offset="1" stop-color="#080814" stop-opacity="0"/></radialGradient>
   </defs>
@@ -68,13 +65,23 @@
         <rect x="43" y="14" width="32" height="6" rx="3" fill="#0e0d1e"/>
         <circle cx="69" cy="17" r="1.1" fill="#8974bc"/>
         <path d="M-1 43v22m0 6v16m120-29v29" fill="none" stroke="#beabf0" stroke-width="2" stroke-linecap="round"/>
-        <g fill="none" stroke="#a992d9" stroke-opacity=".32">
-          <rect x="19" y="50" width="80" height="83" rx="12"/>
-          <path d="M19 92h80M59 50v83"/>
+        <g id="app-preview">
+          <path d="M20 35h30M20 42h19" stroke="#c8b8ee" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="94" cy="38" r="6" fill="#716092"/>
+          <rect x="18" y="54" width="82" height="59" rx="11" fill="#1c2038" stroke="#53496c"/>
+          <circle cx="47" cy="84" r="18" fill="none" stroke="#36344d" stroke-width="4"/>
+          <circle cx="47" cy="84" r="18" fill="none" stroke="#80efcd" stroke-width="4" stroke-linecap="round" stroke-dasharray="82 114" transform="rotate(-90 47 84)"/>
+          <path d="m40 84 5 5 10-11" fill="none" stroke="#e4fff6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M76 72h12M76 80h9M76 95h12" stroke="#a891d0" stroke-width="3" stroke-linecap="round"/>
+          <rect x="18" y="121" width="38" height="29" rx="7" fill="#393051"/>
+          <rect x="62" y="121" width="38" height="29" rx="7" fill="#203b3e"/>
+          <path d="M26 141v-6m6 6v-11m6 11v-8m6 8v-15" stroke="#c5a0fb" stroke-width="3" stroke-linecap="round"/>
+          <path d="m69 140 6-7 6 3 11-8" fill="none" stroke="#80efcd" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="18" y="157" width="82" height="13" rx="6.5" fill="#26243c"/>
+          <path d="m29 164 3-3 3 3v3h-6z" fill="#9bf6da"/>
+          <rect x="56" y="161" width="6" height="6" rx="1.5" fill="#88789e"/>
+          <circle cx="86" cy="164" r="3" fill="#88789e"/>
         </g>
-        <path d="M29 111V70h10a20.5 20.5 0 0 1 0 41H29m61-36a20 20 0 1 0 0 31V92H78" fill="none" stroke="url(#mark)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-        <circle cx="90" cy="106" r="2.7" fill="#83f8d8"/>
-        <path d="M23 148h19m5 0h19m5 0h19" fill="none" stroke="#a68edb" stroke-opacity=".5" stroke-width="3" stroke-linecap="round"/>
         <path d="M40 179h38" fill="none" stroke="#9986bb" stroke-width="2" stroke-linecap="round"/>
       </g>
     </g>
